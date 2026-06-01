@@ -810,6 +810,8 @@ def _bo(target, gen_model, repr_model, prompt_cls, seed=17, device='cuda', save_
             "n_invalid": n_invalid_bo_cands,
             "n_repeats": n_repeat_decoded_cands,
             "time_elapsed": time.time() - time_start,
+            "qed": best_y_struct[0] if best_y_struct else None,
+            "vina": best_y_struct[1] if best_y_struct else None,
         })
     pbar.close()
     time_end = time.time()
@@ -1069,6 +1071,7 @@ if __name__ == '__main__':
         project="repro_bopro",
         entity="1585515136-",
         name=RUN_ID,
+        group=args.acquisition_fn,
         config=vars(args),
         mode="online"
     )
