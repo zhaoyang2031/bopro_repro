@@ -47,7 +47,7 @@ HF_SFORMER_MODELS = {
     "gte-qwen-1.5-7b-instruct": "Alibaba-NLP/gte-Qwen1.5-7B-instruct",
     "gte-qwen-2-1.5b-instruct": "Alibaba-NLP/gte-Qwen2-1.5B-instruct",
     "gte-qwen-2-7b-instruct": "Alibaba-NLP/gte-Qwen2-7B-instruct",
-    "molformer": "/home/ubuntu/.cache/huggingface/hub/models--sentence-transformers--ibm--MoLFormer-XL-both-10pct"
+    "molformer": "/data/xk/zhaoyang/bopro_repro/molformer"  # Server path (was: /home/ubuntu/.cache/...)
     # "ibm/MoLFormer-XL-both-10pct"
 }
 
