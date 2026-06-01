@@ -1,0 +1,304 @@
+{
+  "experiments": [
+    {
+      "name": "ddom_full_dkitty_seed123",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task dkitty --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'eval' --num_workers 1 --task dkitty --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_dkitty_seed234",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task dkitty --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'eval' --num_workers 1 --task dkitty --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_dkitty_seed345",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task dkitty --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'eval' --num_workers 1 --task dkitty --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_dkitty_seed456",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task dkitty --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'eval' --num_workers 1 --task dkitty --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_dkitty_seed567",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task dkitty --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'eval' --num_workers 1 --task dkitty --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_ant_seed123",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task ant --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'eval' --num_workers 1 --task ant --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_ant_seed234",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task ant --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'eval' --num_workers 1 --task ant --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_ant_seed345",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task ant --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'eval' --num_workers 1 --task ant --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_ant_seed456",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task ant --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'eval' --num_workers 1 --task ant --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_ant_seed567",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task ant --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'eval' --num_workers 1 --task ant --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_tf_bind_8_seed123",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task tf-bind-8 --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'eval' --num_workers 1 --task tf-bind-8 --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_tf_bind_8_seed234",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task tf-bind-8 --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'eval' --num_workers 1 --task tf-bind-8 --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_tf_bind_8_seed345",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task tf-bind-8 --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'eval' --num_workers 1 --task tf-bind-8 --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_tf_bind_8_seed456",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task tf-bind-8 --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'eval' --num_workers 1 --task tf-bind-8 --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_tf_bind_8_seed567",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task tf-bind-8 --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'eval' --num_workers 1 --task tf-bind-8 --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_tf_bind_10_seed123",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task tf-bind-10 --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'eval' --num_workers 1 --task tf-bind-10 --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_tf_bind_10_seed234",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task tf-bind-10 --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'eval' --num_workers 1 --task tf-bind-10 --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_tf_bind_10_seed345",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task tf-bind-10 --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'eval' --num_workers 1 --task tf-bind-10 --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_tf_bind_10_seed456",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task tf-bind-10 --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'eval' --num_workers 1 --task tf-bind-10 --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_tf_bind_10_seed567",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task tf-bind-10 --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'eval' --num_workers 1 --task tf-bind-10 --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_superconductor_seed123",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task superconductor --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'eval' --num_workers 1 --task superconductor --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_superconductor_seed234",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task superconductor --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'eval' --num_workers 1 --task superconductor --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_superconductor_seed345",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task superconductor --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'eval' --num_workers 1 --task superconductor --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_superconductor_seed456",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task superconductor --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'eval' --num_workers 1 --task superconductor --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_superconductor_seed567",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task superconductor --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'eval' --num_workers 1 --task superconductor --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_chembl_seed123",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task chembl --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 123 --use_gpu --mode 'eval' --num_workers 1 --task chembl --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_chembl_seed234",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task chembl --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 234 --use_gpu --mode 'eval' --num_workers 1 --task chembl --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_chembl_seed345",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task chembl --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 345 --use_gpu --mode 'eval' --num_workers 1 --task chembl --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_chembl_seed456",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task chembl --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 456 --use_gpu --mode 'eval' --num_workers 1 --task chembl --suffix 'max_ds_conditioning'"
+    },
+    {
+      "name": "ddom_full_chembl_seed567",
+      "paper": "Diffusion Models for Black-Box Optimization",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/ddom-main",
+      "conda_env": "ddom_gtg",
+      "env_setup": "export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/ddom-main:${PYTHONPATH:-}",
+      "timeout_sec": 172800,
+      "command": "python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'train' --simple_clip --num_workers 1 --task chembl --suffix 'max_ds_conditioning' && python design_baselines/diff/trainer.py --name DDOM --config configs/diffusion_test.cfg --seed 567 --use_gpu --mode 'eval' --num_workers 1 --task chembl --suffix 'max_ds_conditioning'"
+    }
+  ]
+}

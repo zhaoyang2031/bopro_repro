@@ -1,0 +1,155 @@
+{
+  "description": "GTG v2: discrete lr=1e-3, 5 tasks x 3 seeds = 15 exps on GPU 2,3",
+  "experiments": [
+    {
+      "name": "gtg_v2_ant_seed0",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task ant --horizon 64 --seed 0 && python evaluate.py --task ant --horizon 64 --ctx_len 32 --alpha 0.8 --seed 0",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_ant_seed1",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task ant --horizon 64 --seed 1 && python evaluate.py --task ant --horizon 64 --ctx_len 32 --alpha 0.8 --seed 1",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_ant_seed2",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task ant --horizon 64 --seed 2 && python evaluate.py --task ant --horizon 64 --ctx_len 32 --alpha 0.8 --seed 2",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_dkitty_seed0",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task dkitty --horizon 64 --seed 0 && python evaluate.py --task dkitty --horizon 64 --ctx_len 32 --alpha 0.8 --seed 0",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_dkitty_seed1",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task dkitty --horizon 64 --seed 1 && python evaluate.py --task dkitty --horizon 64 --ctx_len 32 --alpha 0.8 --seed 1",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_dkitty_seed2",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task dkitty --horizon 64 --seed 2 && python evaluate.py --task dkitty --horizon 64 --ctx_len 32 --alpha 0.8 --seed 2",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_superconductor_seed0",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task superconductor --horizon 64 --seed 0 && python evaluate.py --task superconductor --horizon 64 --ctx_len 32 --alpha 0.8 --seed 0",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_superconductor_seed1",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task superconductor --horizon 64 --seed 1 && python evaluate.py --task superconductor --horizon 64 --ctx_len 32 --alpha 0.8 --seed 1",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_superconductor_seed2",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task superconductor --horizon 64 --seed 2 && python evaluate.py --task superconductor --horizon 64 --ctx_len 32 --alpha 0.8 --seed 2",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_tfbind8_seed0",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task tfbind8 --horizon 64 --seed 0 && python evaluate.py --task tfbind8 --horizon 64 --ctx_len 32 --alpha 0.8 --seed 0",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_tfbind8_seed1",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task tfbind8 --horizon 64 --seed 1 && python evaluate.py --task tfbind8 --horizon 64 --ctx_len 32 --alpha 0.8 --seed 1",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_tfbind8_seed2",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task tfbind8 --horizon 64 --seed 2 && python evaluate.py --task tfbind8 --horizon 64 --ctx_len 32 --alpha 0.8 --seed 2",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_tfbind10_seed0",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task tfbind10 --horizon 64 --seed 0 && python evaluate.py --task tfbind10 --horizon 64 --ctx_len 32 --alpha 0.8 --seed 0",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_tfbind10_seed1",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task tfbind10 --horizon 64 --seed 1 && python evaluate.py --task tfbind10 --horizon 64 --ctx_len 32 --alpha 0.8 --seed 1",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    },
+    {
+      "name": "gtg_v2_tfbind10_seed2",
+      "paper": "GTG v2 lr=1e-3",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/GTG-main",
+      "conda_env": "ddom_gtg",
+      "timeout_sec": 172800,
+      "command": "python train.py --task tfbind10 --horizon 64 --seed 2 && python evaluate.py --task tfbind10 --horizon 64 --ctx_len 32 --alpha 0.8 --seed 2",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NUMEXPR_NUM_THREADS=2 TORCH_NUM_THREADS=2 && export LD_LIBRARY_PATH=/home/xk/.mujoco/mujoco210/bin:$LD_LIBRARY_PATH && export MUJOCO_PY_FORCE_CPU=1 && export PYTHONPATH=/data/xk/zhaoyang/GTG-main:$PYTHONPATH"
+    }
+  ]
+}

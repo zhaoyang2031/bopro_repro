@@ -1,0 +1,155 @@
+{
+  "description": "VSD LSTM 15 experiments",
+  "experiments": [
+    {
+      "name": "vsd_lstm_15_42",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 15 --max-iter 100 --bsize 128 --seed 42 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_15_123",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 15 --max-iter 100 --bsize 128 --seed 123 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_15_234",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 15 --max-iter 100 --bsize 128 --seed 234 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_15_345",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 15 --max-iter 100 --bsize 128 --seed 345 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_15_456",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 15 --max-iter 100 --bsize 128 --seed 456 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_32_42",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 32 --max-iter 100 --bsize 128 --seed 42 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_32_123",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 32 --max-iter 100 --bsize 128 --seed 123 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_32_234",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 32 --max-iter 100 --bsize 128 --seed 234 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_32_345",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 32 --max-iter 100 --bsize 128 --seed 345 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_32_456",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 32 --max-iter 100 --bsize 128 --seed 456 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_64_42",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 64 --max-iter 100 --bsize 128 --seed 42 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_64_123",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 64 --max-iter 100 --bsize 128 --seed 123 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_64_234",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 64 --max-iter 100 --bsize 128 --seed 234 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_64_345",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 64 --max-iter 100 --bsize 128 --seed 345 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    },
+    {
+      "name": "vsd_lstm_64_456",
+      "paper": "VSD-LSTM",
+      "suite": "full",
+      "cwd": "/data/xk/zhaoyang/variationalsearch-main",
+      "conda_env": "vsd_genbo",
+      "timeout_sec": 172800,
+      "command": "python -m experiments.scripts.ehrlich --solver vsd-lstm --sequence-length 64 --max-iter 100 --bsize 128 --seed 456 --device cuda --logdir /nas1/xk/zhaoyang/bbo_repro/logs/vsd",
+      "env_setup": "export WANDB_API_KEY=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 && export WANDB_ENTITY=1585515136- && export WANDB_MODE=online && export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4 TORCH_NUM_THREADS=4 && export PYTHONPATH=/data/xk/zhaoyang/variationalsearch-main:$PYTHONPATH"
+    }
+  ]
+}
