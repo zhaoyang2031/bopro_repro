@@ -1,0 +1,11 @@
+vsd[poli,experiments]@git+ssh://git@github.com/csiro-funml/variationalsearch.git@ICLR
+torch==2.7.1
+matplotlib==3.10.6
+tqdm==4.67.1
+pandas==2.3.2
+click==8.2.1
+botorch<0.15.0,>=0.11
+biopython==1.85
+pdb-tools==2.5.0
+pytorch-holo==0.0.5
+click==8.2.1

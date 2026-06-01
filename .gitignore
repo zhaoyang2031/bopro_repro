@@ -1,0 +1,87 @@
+# PDFs (papers)
+*.pdf
+
+# REINVENT prior model
+ram/reinvent.prior
+
+# GeneticGFN extras (sars_cov2, multi_objective)
+ram/genetic_gfn-main/sars_cov2/
+ram/genetic_gfn-main/multi_objective/
+
+# GeneticGFN pretrained models & data (large files, can be downloaded)
+ram/genetic_gfn-main/pmo/main/smiles_lstm_hc/pretrained_model/
+ram/genetic_gfn-main/pmo/main/selfies_lstm_hc/pretrained_model/
+ram/genetic_gfn-main/pmo/main/gegl/resource/checkpoint/
+ram/genetic_gfn-main/pmo/main/gflownet_al/data/
+ram/genetic_gfn-main/pmo/main/gflownet/data/
+ram/genetic_gfn-main/pmo/main/genetic_gfn/data/
+ram/genetic_gfn-main/pmo/main/genetic_gfn_al/data/
+ram/genetic_gfn-main/pmo/main/genetic_gfn_selfies/data/
+ram/genetic_gfn-main/pmo/main/reinvent/data/
+ram/genetic_gfn-main/pmo/main/reinvent_selfies/data/
+ram/genetic_gfn-main/pmo/data/zinc.tab
+
+# BootGen data
+ram/bootgen-main/design_bench_data/
+ram/bootgen-main/design_bench/
+ram/bootgen-main/rna_data/
+
+# Saturn extras
+ram/saturn-master/experimental_reproduction/
+ram/saturn-master/oracles/
+
+# REINVENT4 extras
+ram/REINVENT4-main/contrib/
+ram/REINVENT4-main/tests/
+ram/REINVENT4-main/notebooks/
+ram/REINVENT4-main/configs/
+
+# Offline dataset checkpoints (can be regenerated)
+*/offline_dataset/*.pt
+
+# BBO large data files
+bbo/NFBO-main/model_weight/
+bbo/NFBO-main/data/ZINC/oracle/ZINC.csv
+bbo/NFBO-main/data/guacamol/oracle/
+
+# GeneticGFN large data
+ram/genetic_gfn-main/pmo/main/mol_ga/mol_ga/data/zinc250k.smiles
+
+# BBO variationalsearch data & models
+bbo/variationalsearch-main/data/
+bbo/variationalsearch-main/models/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.whl
+
+# Logs
+*.log
+ram/logs/
+
+# Wandb
+**/wandb/
+.wandb/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.bak
+*.swp
+*~
