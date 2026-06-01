@@ -91,6 +91,8 @@ def get_gen_model(gen_model_name, enable_cot=False):
             model_pipeline.tokenizer.eos_token_id,
             model_pipeline.tokenizer.convert_tokens_to_ids("<|eot_id|>")
         ]
+        # Filter out None values (e.g. <|eot_id|> doesn't exist in Qwen2)
+        terminators = [t for t in terminators if t is not None]
         rtn = {
             "model": model_pipeline,
             "is_hf": True,
