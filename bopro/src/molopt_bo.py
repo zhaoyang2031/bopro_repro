@@ -6,6 +6,8 @@ import sys
 import atexit
 import traceback
 
+import wandb
+
 import numpy as np
 import torch
 import tqdm
@@ -798,6 +800,17 @@ def _bo(target, gen_model, repr_model, prompt_cls, seed=17, device='cuda', save_
                     posterior_update_y.to(device).to(TORCH_DTYPE[args.dtype]),
                     **condition_args
                 )
+
+        # Log to wandb
+        wandb.log({
+            "iteration": t + 1,
+            "best_score": best_y,
+            "best_molecule": best_x,
+            "n_evaluations": len(sampled_x),
+            "n_invalid": n_invalid_bo_cands,
+            "n_repeats": n_repeat_decoded_cands,
+            "time_elapsed": time.time() - time_start,
+        })
     pbar.close()
     time_end = time.time()
 
@@ -1051,8 +1064,20 @@ if __name__ == '__main__':
     global NON_BO_ACQS
     NON_BO_ACQS = ["OPRO", "random", "none"]
 
+    # Initialize wandb
+    wandb.init(
+        project="repro_bopro",
+        entity="1585515136-",
+        name=RUN_ID,
+        config=vars(args),
+        mode="online"
+    )
+
     # Main loop
     run_bo(target=args.target, n_runs=args.n_seeds, seed=args.seed, device=args.device)
+
+    # Finish wandb
+    wandb.finish()
 
     if args.debug:
         breakpoint()
