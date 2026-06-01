@@ -6,7 +6,7 @@
 
 # 环境设置
 source /data/xk/zhaoyang/miniconda3/etc/profile.d/conda.sh
-conda activate ddom_gtg
+conda activate bopro
 cd /data/xk/zhaoyang/bopro_repro/bopro
 
 # GPU设置 (不要用GPU 0，留给交互式调试)
@@ -14,6 +14,9 @@ export CUDA_VISIBLE_DEVICES=1
 export OMP_NUM_THREADS=4
 export MKL_NUM_THREADS=4
 export PYTHONUNBUFFERED=1
+
+# HuggingFace镜像 (服务器无法直连huggingface.co)
+export HF_ENDPOINT=https://hf-mirror.com
 
 # 输出目录 (使用/nas1避免/data磁盘满)
 OUT_DIR="/nas1/xk/zhaoyang/bopro_repro/outputs-molopt-qwen2-7b"

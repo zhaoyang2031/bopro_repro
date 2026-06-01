@@ -91,29 +91,41 @@
    ssh xk@180.209.6.83
    ```
 
-2. **使用现有conda环境** ✅
+2. **创建conda环境 `bopro`** ✅
    ```bash
    source /data/xk/zhaoyang/miniconda3/etc/profile.d/conda.sh
-   conda activate ddom_gtg
-   # Python 3.9.23, torch 2.8.0, transformers 4.57.6
+   conda create -n bopro python=3.9 -y
+   conda activate bopro
+   # Python 3.9.23
    ```
 
-3. **安装缺失依赖** ✅ 已执行 (正在后台安装)
+3. **安装依赖** ✅
    ```bash
-   conda install -c conda-forge -y sentence-transformers dockstring gensim
+   # PyTorch (CUDA 12.1)
+   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+   
+   # 核心依赖 (使用python -m pip确保安装到正确环境)
+   python -m pip install "transformers>=4.44,<4.45" "sentence-transformers==2.3.0" gensim dockstring botorch gpytorch rdkit-pypi scipy numpy pandas tqdm matplotlib scikit-learn openai boto3 dill pebble pyext laplace-torch accelerate
+   python -m pip install 'git+https://git@github.com/wiseodd/asdl@asdfghjkl'
+   python -m pip install laplace-bayesopt
+   python -m pip install 'curvlinops-for-pytorch==2.0.0'
    ```
 
 4. **上传代码** ✅ 已完成
    ```bash
-   # 本地执行
    scp -r D:/BOPRO-ICLR-2025-main/bopro xk@180.209.6.83:/data/xk/zhaoyang/bopro_repro/
    scp D:/BOPRO-ICLR-2025-main/launch_bopro_molopt.sh xk@180.209.6.83:/data/xk/zhaoyang/bopro_repro/
    ```
 
-5. **验证代码**
+5. **配置HuggingFace镜像** ✅
    ```bash
-   ls -la /data/xk/zhaoyang/bopro_repro/bopro/
-   ls -la /data/xk/zhaoyang/bopro_repro/bopro/src/
+   export HF_ENDPOINT=https://hf-mirror.com
+   ```
+
+6. **下载模型** (进行中...)
+   ```bash
+   # Qwen2-7B-Instruct (~14GB)
+   # MolFormer 表示模型
    ```
 
 ### Phase 2: 代码适配
