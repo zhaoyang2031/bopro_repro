@@ -28,6 +28,19 @@
 
 ## 实验配置
 
+### 当前实验进度 (2026-06-02)
+- ✅ **logEI**: 9个蛋白质 × 3种子 = 27个实验 (已完成)
+- 🔄 **OPRO**: 9个蛋白质 × 3种子 = 27个实验 (进行中)
+- 🔄 **random**: 8个蛋白质 × 3种子 = 24个实验 (刚启动，跳过CDK1)
+
+### 实验方法说明
+| 方法 | acquisition_fn | 说明 |
+|------|----------------|------|
+| BOPRO-LogEI | `logEI` | 主要方法，BO + LogEI采集函数 |
+| OPRO | `OPRO` | Baseline，贪心策略选历史最优 |
+| Random | `random` | Baseline，随机选历史分子作为prompt |
+| ~~RS~~ | `none` | ~~Repeated Sampling~~ (暂不跑) |
+
 ### 实验参数 (严格参考论文 Section A.4.1)
 ```bash
 # 实验方法 (论文Section 6.1)
@@ -77,11 +90,11 @@
 - **每个实验**: 200次解决方案生成
 - **最终指标**: 所有蛋白质的平均scalarized objective
 
-### 最小验证方案 (推荐先跑)
-- **方法**: 3个 (BOPRO-LogEI, OPRO, RS)
-- **蛋白质**: 5-10个 (先测试)
+### 当前复现计划
+- **蛋白质**: 9个 (SRC, EGFR, ABL1, CDK2, AKT1, MAPK1, AKT2, KDR, CDK1)
+- **方法**: 3个 (logEI, OPRO, random)
 - **种子**: 3个
-- **总实验数**: 10 × 3 × 3 = 90个
+- **总实验数**: 9 × 3 × 3 = 81个 (已完成27个logEI，正在跑OPRO和random)
 
 ## 实施步骤
 
@@ -390,3 +403,8 @@ tail -f /nas1/xk/zhaoyang/bopro_repro/logs/full/bopro_molopt_*.log
 - 原始代码: D:\BOPRO-ICLR-2025-main\bopro
 - 服务器指南: D:\BOPRO-ICLR-2025-main\bbo\repro\HOWTO.md
 - GPU启动脚本: D:\BOPRO-ICLR-2025-main\ram\launch_gpu0_gfn_dock.sh
+
+## 启动脚本
+- `launch_bopro_molopt.sh` - 单次测试运行
+- `launch_bopro_full.sh` - 完整实验 (logEI/OPRO/none)
+- `launch_bopro_random.sh` - Random方法实验 (8蛋白质×3种子)
