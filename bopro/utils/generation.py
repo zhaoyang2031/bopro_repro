@@ -35,6 +35,7 @@ HF_PIPELINE_MODELS = {
     "qwen-2-72b-instruct": "Qwen/Qwen2-72B-Instruct",
     "qwen-2-0.5b-instruct": "Qwen/Qwen2-0.5B-Instruct",
     "qwen-2-1.5b-instruct": "Qwen/Qwen2-1.5B-Instruct",
+    "qwen-3.5-4b": "Qwen/Qwen3.5-4B",
     "t5-small": "google-t5/t5-small",
     "t5-base": "google-t5/t5-base",
     "t5-large": "google-t5/t5-large",
