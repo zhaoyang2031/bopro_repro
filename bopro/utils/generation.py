@@ -90,6 +90,7 @@ OPENAI_COSTS = {
 
 SGLANG_MODELS = {
     "gemma-2-2b-it": "google/gemma-2-2b-it",
+    "qwen-3.5-4b": "Qwen/Qwen3.5-4B",
 }
 
 NO_CONVERSE_SUPPORT = [
